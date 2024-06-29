@@ -1,0 +1,21 @@
+{
+  "manifest_version": 2,
+  "name": "Cookie Finder",
+  "version": "1.0",
+  "permissions": [
+    "cookies",
+    "activeTab",
+    "storage",
+    "alarms",
+    "https://*/",
+    "http://*/"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html"
+}
